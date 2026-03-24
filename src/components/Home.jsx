@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Navbar } from "./Navbar"
 
 const Home = () => {
     const [data, setData] = useState([]);
@@ -24,6 +25,7 @@ const Home = () => {
 
     return (
         <div>
+            < Navbar />
             <h1>Donors</h1>
             <ul>
                 {data.map(donor => (
